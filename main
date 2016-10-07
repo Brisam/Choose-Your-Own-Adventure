@@ -1,0 +1,32 @@
+var user = prompt("It's a dragon! Do we FIGHT, BEG, or RUN?").toUpperCase();
+
+switch(user){
+    case 'FIGHT':
+        var sword = prompt("Do you have a SWORD? (YES or NO)").toLowerCase();
+        var shield = prompt("Do you have a SHIELD? (YES or NO)").toLowerCase();
+        if (sword === 'yes' && shield === 'yes'){
+            console.log("You've come well prepared! Your sword is mighty and your shield is strong! You DEFEAT the dragon! YOU WIN!");
+            }else{
+            console.log("How can you fight without weapons? Go find a stick or something! YOU LOSE.");
+            };
+        break;
+    case 'BEG':
+        var dragonTemper = prompt("Does the dragon look NICE? (YES or NO)").toLowerCase();
+        if (dragonTemper === 'yes'){
+            console.log("You beg the dragon for your life! The dragon seems confused... Quick, run while it's distracted!");
+            }else{
+            console.log("Are you kidding?! This dragon is furious! YOU'RE TOAST!!!");
+            };
+        break;
+    case 'RUN':
+        var fast = prompt("Are you FAST? (YES or NO)").toLowerCase();
+        var agile = prompt("Are you AGILE? (YES or NO)").toLowerCase();
+        if(fast === 'yes' || agile === 'yes'){
+            console.log("You only need to be one! You dodge the fire and ESCAPE the cave! YOU WIN!");
+            }else{
+            console.log("Did you even train, bro? You dodge NOTHING and fry... YOU LOSE!");
+            };
+        break;
+    default:
+        console.log("You won't do anything? You've been eaten! YOU LOSE.")
+    };
